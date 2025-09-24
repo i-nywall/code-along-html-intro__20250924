@@ -1,0 +1,22 @@
+:root {
+  --btn-bg: #e74c3c;
+  --btn-color: #ffffff;
+  --btn-border: rgba(0, 0, 0, 0.4);
+
+  --btn-bg-hover: #c0392b;
+  --btn-color-hover: #ffffff;
+  --btn-border-hover: rgba(0, 0, 0, 0.5);
+
+  --btn-bg-active: #a93226;
+  --btn-color-active: #ffffff;
+  --btn-border-active: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
