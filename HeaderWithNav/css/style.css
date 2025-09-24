@@ -1,5 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #eee;
+    --text-color: #000;
+    --accent-color: #6ec4e3;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+}
+
+.main-header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.main-nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.list-item a {
+    text-decoration: none;
+    /*not neccessary you can just use inherit*/
+    color: var(--text-color);
+    transition: all 200ms ease;
+}
+
+.list-item a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 2px;
 }
