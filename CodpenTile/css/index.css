@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,61 @@
 }
 
 :root {
-    --font-main: 'Noto Sans', sans-serif;
+    --font-main: "Noto Sans", sans-serif;
     --bg-main: #131417;
     --bg-card: #1e1f26;
     --bg-stats: #131417;
     --username: #b7bbc8;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: var(--font-main);
+    background-color: var(--bg-main);
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    display: grid;
+    padding: 1rem;
+    background-color: var(--bg-card);
+    max-width: 300px;
+    border-radius: 0.5rem;
+    color: white;
+    gap: 0.5rem;
+}
+
+.card img {
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 1rem;
+}
+
+.card-details p {
+    color: var(--username);
+}
+.card-stats {
+    list-style: none;
+    display: none;
+    gap: 1rem;
+}
+
+.card:hover .card-stats {
+    display: flex;
+}
+
+.card-stats li {
+    background-color: var(--bg-stats);
+    padding: 4px 8px;
+    height: auto;
+    border-radius: 9999px;
 }
