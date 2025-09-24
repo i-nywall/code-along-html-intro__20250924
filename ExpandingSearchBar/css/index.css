@@ -8,3 +8,31 @@
     --search-border: #bbb;
     --search-focus-border: #3a71ca;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.search-bar {
+    display: block;
+    width: 30%;
+    min-width: 300px;
+
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid var(--search-border);
+    transition: 200ms ease;
+}
+.search-bar:focus {
+    width: 100%;
+    border-color: var(--search-focus-border);
+    outline: none;
+}
+
+.search-bar::placeholder {
+    font-weight: bold;
+}
